@@ -13,12 +13,12 @@ void removeDup(ListNode* head) {
     while (cur != nullptr) {
         if (map.find(cur->val) == map.end()) {  // not found
             map.emplace(cur->val, 1);
+            prev = cur;
         }
         else {  // remove the duplicate
             prev->next = cur->next;
             cur = prev;
         }
-        prev = cur;
         cur = cur->next;
     }
 
