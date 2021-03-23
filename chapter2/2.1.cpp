@@ -17,8 +17,8 @@ void removeDup(ListNode* head) {
         }
         else {  // remove the duplicate
             prev->next = cur->next;
-            cur = prev;
         }
+
         cur = cur->next;
     }
 
