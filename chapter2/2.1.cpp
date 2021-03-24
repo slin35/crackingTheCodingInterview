@@ -4,7 +4,9 @@
 
 using namespace std;
 
-/* remove duplicates from unsorted list */
+/* remove duplicates from unsorted list 
+ * if no extra buffers allow, use a tmp ptr removing duplicates of current node O(N^2)
+*/
 void removeDup(ListNode* head) {
     unordered_map<int, int> map;
 
