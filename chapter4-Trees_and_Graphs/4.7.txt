@@ -1,0 +1,20 @@
+/*
+ * build order: given a list of dependencies, find the order that will build the project
+ * solution: topological sort
+ 
+ void topologicalSort(Graph g, vector<node*> res) {
+     S <- list of all nodes with 0 incoming edges
+
+     while (!S.empty()) {
+         node* cur = S.pop();
+
+         for (node *n : cur's edges) {
+             n.inDegrees --;
+             if (n.inDegrees == 0)
+                S.push(n);
+         }
+     }
+ }
+
+
+*/

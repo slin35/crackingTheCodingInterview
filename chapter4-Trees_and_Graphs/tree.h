@@ -11,8 +11,9 @@ struct TreeNode {
     bool visited;
     TreeNode *left;
     TreeNode *right;
+    TreeNode *parent;
     TreeNode() : val(0), left(nullptr), right(nullptr), visited(false) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr), visited(false) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr), visited(false), parent(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
