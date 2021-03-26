@@ -1,0 +1,23 @@
+/* find out if there's a route between two nodes in a directed graph
+ * solution: BFS
+
+    bool bfs(Node* start, Node* end) {
+        Queue q;
+        q.push(start);
+
+        while (!q.empty()) {
+            Node* node = q.pop();
+            if (start == end)
+                return true;
+            visited[node] = true;
+            for (Node * neighbor : node) {
+                    if (!visited[neighbor]) {
+                        q.push(neighbor);
+                    }
+            }
+        }
+
+        return false;
+    }
+
+*/
