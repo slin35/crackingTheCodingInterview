@@ -1,0 +1,21 @@
+/*
+ * design a binary tree data structure that returns the a random node among all current nodes
+ * solution:
+    keep tract of the size of the subtrees
+
+    // int index = rand() % this->size;
+    TreeNode *getRandomNode(int index) {
+        int leftSize = this->left ? this->left->size : 0;
+
+        if (index < leftSize) {
+            return this->left->getRandomNode();
+        }
+        else if (index == leftSize) {
+            return this;
+        }
+        else {
+            this->right->getRandomNode(index - (leftSize + 1)); // skipping the left subtree
+        }
+    }
+
+*/
