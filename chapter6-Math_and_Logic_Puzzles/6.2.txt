@@ -1,0 +1,11 @@
+Q: play one of the  two games:
+    Game 1: get one shot to make the hoop
+    Game 2: get three shots and have to make two of the three shots
+
+Solution:
+    probability of winning:
+    Game 1: p
+    Game 2: 3 * p * p * (p - 1) + p * p * p = 3p^2 - 2p^3
+
+    since p is between 0 and 1, play game 1 when p < 0.5 and game 2 if p > 0.5; else either.
+

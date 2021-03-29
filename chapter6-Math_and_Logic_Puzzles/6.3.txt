@@ -1,0 +1,8 @@
+Q: there is a 8x8 chessboard in which two diagonally opposite corners have been cut off. There are 31 dominos, and a single domino covers two squares. Can the 31 dominos cover the entire board?
+
+Solution:
+    try it with 4x4 chessboard and 1 dominos ... cant do.
+    31 dominos required 31 white squares and 31 black squares.
+    cutting off the opposite corners get rid of 2 black or 2 white squares.
+    so it will left with either 32 whites and 30 blacks or 30 whites and 32 blacks.
+    Either case, it's not possible to fit 31 dominos.

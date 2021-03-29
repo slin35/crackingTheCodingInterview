@@ -1,0 +1,5 @@
+Q: given 20 bottles of pills. 19 bottles have 1.0 gram pills, but 1 has pills of weight 1.1 grams. How to find the heavy bottle in which you could only scale once.
+Solution: 
+    take 1 pill from bottle 1, 2 pills from bottle 2, ..., 20 pills from bottle 20.
+    total weight = 1 + 2 + ... + 20 = 20 * 21 / 2 = 210 if all were 1.0 gram pills, but there will be extra weights, and extra weights will come from the heavy bottle:
+    bottle # = (actual weight - 210) / 0.1  
