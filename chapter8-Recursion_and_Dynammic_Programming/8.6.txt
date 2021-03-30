@@ -1,0 +1,11 @@
+/* tower of hanoi: move disks from first to last using stacks 
+ * general pseudocode
+    void move(int n, vector<int> src, vector<int> aux, vector<int> des) {
+        if (n <= 0)
+            return;
+
+        move(n - 1, src, aux, des);   // move n - 1 disks from src to aux using des as buffer
+        moveTop(src, des);            // move the top one (last one) from src to des
+        move(n - 1, aux, des, src);   // move n - 1 disks from aux to des using scr as buffer
+    }
+*/
