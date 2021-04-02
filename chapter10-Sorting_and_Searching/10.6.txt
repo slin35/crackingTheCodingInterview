@@ -1,0 +1,4 @@
+/* sort big file: given a 20 GB file with one string per line, how do you sort the file */
+/* solution:
+        divides into chunks and sort separately then merge back :)
+*/
