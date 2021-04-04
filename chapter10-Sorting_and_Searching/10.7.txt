@@ -1,0 +1,8 @@
+/* missing int:
+    given an input file with 4 billion non-negative integers, provide an algorithm to generate an integer isnt in the file. Assume you have 1GB memory available.
+
+
+    solution: 2^31 non-negative integer possible. With 1GB, create bit vector of 4 billion bits. 2 loops one for creation one for searching.
+              With only 1MB memory, divides the number into blocks, find unique and missing block and look up for numbers.
+
+*/
